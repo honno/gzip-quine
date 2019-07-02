@@ -1,0 +1,22 @@
+# Site settings
+title: Honno's Blorg
+email: quitesimplymatt@gmail.com
+description: >-
+  Personal blog of Matthew Barber.
+baseurl: "/"
+url: "https://blog.matthewbarber.io/"
+twitter_username: whostolehonno
+github_username: honno
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+sass:
+  sass_dir: _sass
+
+# Minima
+minima:
+  social_links:
+    twitter: WhoStoleHonno
+    github: Honno
