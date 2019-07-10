@@ -1,0 +1,20 @@
+// Minima colors
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #2a7ae2 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+$orange-color:     #f66a0a !default;
+
+// Ripped colors from https://gamejolt.com/
+$white: #fff;
+$darkest: #111111;
+$darker: #212121;
+$dark: #292929;
+$gray: #363636;
+$gray-subtle: #444444;
+$light: #7e7e7e;
+$lighter: #d1d1d1;
+$lightest: #f3f3f3;

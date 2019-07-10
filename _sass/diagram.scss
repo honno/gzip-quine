@@ -1,0 +1,50 @@
+@import "colors";
+
+div.diagram-container {
+    display: block;
+    text-align: center;
+
+    & > p {
+        font-style: italic;
+    }
+}
+
+pre.diagram {
+    display: inline-block;
+    text-align: left;
+    padding: 1.5rem;
+
+    line-height: 1rem;
+
+    font-family: "Roboto Mono", monospace;
+
+    color: $dark;
+    background: $lightest;
+    border: $light;
+
+    &::selection, &::-moz-selection {
+        color: $white !important;
+        background: $gray !important;
+    }
+
+    & > span {
+        // Lazy way to ignore Minima styling
+        &::selection, &::-moz-selection {
+            color: $white !important;
+            background: $gray !important;
+        }
+
+        &.soft { color: $light }
+    }
+}
+
+pre.diagram-anim {
+    color: $lighter;
+    background: $dark;
+    border: $gray-subtle;
+
+    &::selection, &::-moz-selection {
+        color: $gray !important;
+        background: $white !important;
+    }
+}

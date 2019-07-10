@@ -3,3 +3,9 @@
 ---
 
 @import "minima";
+
+// Import custom
+@import
+    "diagram",
+    "collapse"
+;

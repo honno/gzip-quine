@@ -1,0 +1,32 @@
+@import "colors";
+
+.collapsible-container {
+    // Quick fix for bottom margin consistency with Minima
+    margin-bottom: 15px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+
+    font-style: italic;
+    background-color: transparent;
+}
+
+/* Add a background color to the button when you move the mouse over it (hover) */
+.collapsible:hover {
+    background-color: $grey-color-light;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    margin-top: .5rem;
+    padding: 0 1rem;
+    display: none;
+    overflow: hidden;
+}
