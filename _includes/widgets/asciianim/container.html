@@ -1,27 +1,6 @@
-{% unless id %}{% assign id = 0 %}{% endunless %}
-<div class="diagram-container">
-  <pre id="asciianim-{{ id }}" class="diagram diagram-anim"></pre>
+{% unless asciianim_id %}{% assign asciianim_id = 0 %}{% endunless %}
+<div asciianim_id="asciianim-{{ asciianim_id }}" class="asciianim-container diagram-container">
+  <pre class="asciianim-theatre diagram diagram-anim"></pre>
+  <span class="asciianim-source" style="display: none">{{ include.src }}</span>
 </div>
-<script>
-  // YES THIS IS BAD I KNOW SUE ME
-
-  // Parse animation
-  var anim_text{{ id }} = `{{ include.src }}`;
-  var frames{{ id }} = []
-  if (anim_text{{ id }}.indexOf("\r\n") != -1) { frames{{ id }} = anim_text{{ id }}.split("===r\n") }
-  else { frames{{ id }} = anim_text{{ id }}.split("===\n") }
-
-  var theatre{{ id }} = document.getElementById("asciianim-{{ id }}");
-
-  function set_frame{{ id }}(cur_frame{{ id }}) {
-    theatre{{ id }}.innerText = frames{{ id }}[cur_frame{{ id }}];
-    if (cur_frame{{ id }} < (frames{{ id }}.length - 1)) { cur_frame{{ id }}++ }
-    else { cur_frame{{ id }} = 0 }
-
-    setTimeout(set_frame{{ id }}, {{ include.timeout | default: 1000 }}, cur_frame{{ id }});
-  }
-
-  set_frame{{ id }}(0);
-
-</script>
-{% assign id = id | plus: 1 %}
+{% assign asciianim_id = asciianim_id | plus: 1 %}
