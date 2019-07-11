@@ -11,10 +11,8 @@
     padding: .5rem 1rem;
     width: 100%;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
-
-    font-style: italic;
     background-color: transparent;
 }
 
@@ -25,7 +23,7 @@
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-    margin-top: .5rem;
+    margin-top: 1rem;
     padding: 0 1rem;
     display: none;
     overflow: hidden;
