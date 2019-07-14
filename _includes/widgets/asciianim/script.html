@@ -7,15 +7,14 @@
   for (var i = 0; i < asciianim_containers.length; i++) {
     let asciianim_container = asciianim_containers[i];
 
-    let anim_text = asciianim_container.querySelector(".asciianim-source").innerText
+    let anim_text = asciianim_container.querySelector(".asciianim-source").innerHTML
     let frames = []
     if (anim_text.indexOf("\r\n") != -1) { frames = anim_text.split(ASCIIANIM_DELIMITER+"r\n") }
     else { frames = anim_text.split(ASCIIANIM_DELIMITER+"\n") }
 
     let theatre = asciianim_container.querySelector(".asciianim-theatre");
-
     function set_frame(cur_frame) {
-      theatre.innerText = frames[cur_frame];
+      theatre.innerHTML = frames[cur_frame];
       if (cur_frame < (frames.length - 1)) { cur_frame++ }
       else { cur_frame = 0 }
 

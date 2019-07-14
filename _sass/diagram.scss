@@ -1,8 +1,16 @@
 @import "colors";
 
+$bold-size: 0.15px;
+@mixin bold($colour) {
+    color: $colour;
+    text-shadow: -$bold-size 0  $colour, $bold-size 0  $colour;
+}
+
+
 div.diagram-container {
     display: block;
     text-align: center;
+    margin-bottom: 15px;
 
     & > p {
         font-style: italic;
@@ -10,6 +18,7 @@ div.diagram-container {
 }
 
 pre.diagram {
+    margin-bottom: 0; // Reset of Minima
     display: inline-block;
     text-align: left;
     padding: 1.5rem;
@@ -35,6 +44,7 @@ pre.diagram {
         }
 
         &.soft { color: $light }
+        &.hard { @include bold($darkest)}
     }
 }
 
@@ -46,5 +56,31 @@ pre.diagram-anim {
     &::selection, &::-moz-selection {
         color: $gray !important;
         background: $white !important;
+    }
+
+    & > span {
+        &::selection, &::-moz-selection {
+            color: $gray !important;
+            background: $white !important;
+        }
+
+        &.soft { color: $light }
+        &.hard { @include bold($lightest) }
+    }
+}
+
+div.diagram-container.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    background: $dark;
+
+    & > pre.diagram-anim {
+        background: none;
+        border: none;
     }
 }
