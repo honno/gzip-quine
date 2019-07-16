@@ -69,6 +69,7 @@ pre.diagram-anim {
     }
 }
 
+body { overflow-x:hidden }
 div.diagram-container.full-width {
     width: 100vw;
     position: relative;
@@ -83,4 +84,7 @@ div.diagram-container.full-width {
         background: none;
         border: none;
     }
+}
+@media (max-width: 1025px) {
+    div.diagram-container.full-width { display: none }
 }
