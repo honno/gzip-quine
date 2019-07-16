@@ -13,23 +13,17 @@
             style="text-align: right">
           {%- if site.email -%}
           <li>
-            <a class="u-email" href="mailto:{{ site.email }}">
-              {{ site.email }}
-            </a>
+            Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
           </li>
           {%- endif -%}
           {%- if site.twitter_username -%}
           <li>
-            <a class="u-twitter" href="https://twitter.com/{{ site.twitter_username }}">
-              TWT@{{ site.twitter_username }}
-            </a>
+            Twitter: <a class="u-twitter" href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>
           </li>
           {%- endif -%}
           {%- if site.github_username -%}
           <li>
-            <a class="u-twitter" href="https://github.com/{{ site.github_username }}">
-              GH@{{ site.github_username }}
-            </a>
+            GitHub: <a class="u-twitter" href="https://github.com/{{ site.github_username }}">@{{ site.github_username }}</a>
           </li>
           {%- endif -%}
         </ul>
