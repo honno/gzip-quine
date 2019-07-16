@@ -5,8 +5,8 @@ description: >-
   Personal blog of Matthew Barber.
 baseurl: "/"
 url: "https://blog.matthewbarber.io/"
-twitter_username: whostolehonno
-github_username: honno
+twitter_username: WhoStoleHonno
+github_username: Honno
 
 # Build settings
 markdown: kramdown

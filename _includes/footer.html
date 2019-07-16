@@ -2,11 +2,40 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-      <p>Blorg posts come with a <strong>100% Sunk Cost Guarantee</strong>*</p>
-      <p style="font-size: .5rem"><sup>[*]</sup> May incur Apple brand loyalty</p>
 
-      <p align="center" style="font-size: .8rem">&copy; Matthew Barber {{ 'now' | date: "%Y" }}</p>
-    </div>
+    <div class="footer-col-wrapper">
+      <div class="footer-col one-half">
+        <p>The blorg comes with a <strong>100% Sunk Cost Guarantee</strong></p>
+      </div>
+
+      <div class="footer-col one-half">
+        <ul class="contact-list"
+            style="text-align: right">
+          {%- if site.email -%}
+          <li>
+            <a class="u-email" href="mailto:{{ site.email }}">
+              {{ site.email }}
+            </a>
+          </li>
+          {%- endif -%}
+          {%- if site.twitter_username -%}
+          <li>
+            <a class="u-twitter" href="https://twitter.com/{{ site.twitter_username }}">
+              TWT@{{ site.twitter_username }}
+            </a>
+          </li>
+          {%- endif -%}
+          {%- if site.github_username -%}
+          <li>
+            <a class="u-twitter" href="https://github.com/{{ site.github_username }}">
+              GH@{{ site.github_username }}
+            </a>
+          </li>
+          {%- endif -%}
+        </ul>
+      </div>
+
+  <p align="center" style="font-size: .8rem">&copy; Matthew Barber {{ 'now' | date: "%Y" }}</p>
 
   </div>
 
