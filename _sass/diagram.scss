@@ -15,6 +15,8 @@ div.diagram-container {
     & > p {
         font-style: italic;
     }
+
+    position: relative;
 }
 
 pre.diagram {
@@ -46,6 +48,10 @@ pre.diagram {
         &.soft { color: $light }
         &.hard { @include bold($darkest)}
     }
+}
+.overflow-center {
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 pre.diagram-anim {
