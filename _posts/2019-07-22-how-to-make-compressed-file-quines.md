@@ -14,7 +14,7 @@ image: "quine_gz.png"
 {% capture quine_asciianim %}{% include {{ diagram_dir }}/gzip_quine_anim.html %}{% endcapture %}
 {% include {{ diagram_dir }}/gzip_quine_anim_container.html src=quine_asciianim %}
 
-You may of come across a compressed archive file (`.zip`, `.tar.gz`, `.rar` etc.) that [infinitely contains itself](https://alf.nu/ZipQuine) and thought that looks neat.
+You may have come across a compressed archive file (`.zip`, `.tar.gz`, `.rar` etc.) that [infinitely contains itself](https://alf.nu/ZipQuine) and thought that looks neat.
 
 You may even want to make your own---if you have suspiciously too much time on your hands and like to jump into black holes of pointless endeavours, then let me welcome you comrade. This post will explore everything you need to know to be on your merry way creating these quines.
 
