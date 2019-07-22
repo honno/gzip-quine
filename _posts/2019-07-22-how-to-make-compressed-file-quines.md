@@ -271,7 +271,7 @@ Let me unpack that for you:
 
 {% include {{ diagram_dir }}/repeat_24_answer_explaination.html %}
 
-If you have no idea how DEFLATE's fixed Huffman codes work, you may want to read [this excellent DEFLATE reference](http://calmarius.net/?lang=en&page=programming%2Fzlib_deflate_quick_reference) by Calmarius. He importantly offers a clear explanation of how the DEFLATE alphabet (for literal/length & distance codes) works, as well as the specification generally. Don't mind the ZLIB stuff.
+If you have no idea how DEFLATE's fixed Huffman codes work, you may want to read [this excellent DEFLATE reference](http://calmarius.net/?lang=en&page=programming%2Fzlib_deflate_quick_reference) by Calmarius. He importantly offers a clear explanation of how the DEFLATE alphabet works (needed for literal/length & distance codes), as well as the specification generally. Don't mind the ZLIB stuff.
 
 Take your time~
 
