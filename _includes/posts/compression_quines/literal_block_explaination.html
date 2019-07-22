@@ -1,0 +1,12 @@
+<div class="diagram-container">
+<pre class="diagram">
+  <span class="soft">0   1   2   3   4   5...</span>
++---+---+---+---+---+================================+
+| B |  LEN  | NLEN  |... LEN bytes of literal data...|
++---+---+---+---+---+================================+
+
+B: BFINAL + BTYPE + Zero padding to byte boundary
+LEN: Length of literal data
+NLEN:  Bit flipped LEN
+</pre>
+</div>

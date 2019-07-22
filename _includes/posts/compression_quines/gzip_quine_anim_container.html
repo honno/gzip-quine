@@ -1,0 +1,7 @@
+{% unless asciianim_id %}{% assign asciianim_id = 0 %}{% endunless %}
+<div id="asciianim-{{ asciianim_id }}" class="asciianim-container diagram-container full-width"
+     style="margin-top: -15px">
+  <pre class="asciianim-theatre diagram diagram-anim"></pre>
+  <span class="asciianim-source" style="display: none">{{ include.src }}</span>
+</div>
+{% assign asciianim_id = asciianim_id | plus: 1 %}

@@ -1,0 +1,26 @@
+<div class="diagram-container">
+<pre class="diagram overflow-center">
+            <span class="soft">+--</span> Literal codes between 256..279 are 7 bits long
+            <span class="soft">|</span>              
+            <span class="soft">|</span>             <span class="soft">+--</span> All distance codes in BTYPE=01 blocks are 5 bits long
+          <span class="soft">__|__</span>          <span class="soft">_|_</span>
+         <span class="soft">/</span>     <span class="soft">\</span>        <span class="soft">/</span>   <span class="soft">\</span>
+<span class="hard">0</span> <span class="soft">+</span> <span class="hard">01</span> <span class="soft">+</span> <span class="hard">0001110</span><span class="soft">[+</span><span class="hard">01</span><span class="soft">]</span> <span class="soft">+</span> <span class="hard">01000</span><span class="soft">[+</span><span class="hard">111</span><span class="soft">]</span> <span class="soft">+</span> <span class="hard">0000</span>
+<span class="soft">^</span>   <span class="soft">^</span>       <span class="soft">^</span>     <span class="soft">^</span>       <span class="soft">^</span>     <span class="soft">^</span>      <span class="soft">^</span>
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>      <span class="soft">|</span>
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>      <span class="soft">+--</span> Zero padding to byte boundary
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">+--</span> Add 7 to length base 17 => 24
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>       <span class="soft">|</span>
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>       <span class="soft">+--</span> Distance code 8 (length base: 17, extra bits: 3)
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">|</span>
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">|</span>     <span class="soft">+--</span> Add 1 to length base 23 => 24
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">|</span>
+<span class="soft">|</span>   <span class="soft">|</span>       <span class="soft">+--</span> Literal code 270 (length base: 23, extra bits: 2)
+<span class="soft">|</span>   <span class="soft">|</span>
+<span class="soft">|</span>   <span class="soft">+--</span> BTYPE=01 (block is compressed using DEFLATE's pre-built Huffman table)
+<span class="soft">|</span>
+<span class="soft">+--</span> BFINAL=0 (not the final block)
+</pre>
+</div>
+

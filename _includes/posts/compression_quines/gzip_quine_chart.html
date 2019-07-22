@@ -1,0 +1,32 @@
+<div class="diagram-container">
+<pre class="diagram">
+       <span class="soft">0   1   2   3   4   5   6   7   8   9   A   B   C   D   E   F</span>   
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">000</span>  |ID1|ID2|CM |FLG|     MTIME     |XFL|OS |    FNAME := "quine.gz" &gt;
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">020</span> &lt;            |     <span class="hard">Print 24</span>      |<span class="soft">ID1</span>|<span class="soft">ID2</span>|<span class="soft">CM</span> |<span class="soft">FLG</span>|     <span class="soft">MTIME</span>     | 
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">040</span>  |<span class="soft">XFL</span>|<span class="soft">OS</span> |        <span class="soft">FNAME := "quine.gz"</span>        |     <span class="soft">Print 24</span>      | 
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">060</span>  |     <span class="hard">Repeat 24</span>     |      <span class="hard">Print 5</span>      |     <span class="soft">Repeat 24</span>     |    <span class="hard">&gt;</span>
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">100</span> <span class="hard">&lt; Print 5</span>        |      <span class="soft">Print 5</span>      |     <span class="hard">Print 20</span>      |        <span class="soft">&gt;</span>
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">120</span> <span class="soft">&lt; Repeat 24</span>  |      <span class="soft">Print 5</span>      |      <span class="soft">Print 5</span>      |   <span class="soft">Print 20 &gt;</span>
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">140</span> <span class="soft">&lt;</span>        |     <span class="hard">Repeat 20</span>     |     <span class="hard">Print 20</span>      |      <span class="soft">Repeat 20 &gt;</span>
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">160</span> <span class="soft">&lt;</span>    |     <span class="soft">Print 20</span>      |     <span class="soft">Repeat 20</span>     |     <span class="soft">Print 20</span>      | 
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">200</span>  |     <span class="hard">Repeat 20</span>     |     <span class="hard">Print 20</span>      |     <span class="soft">Repeat 20</span>     |    <span class="soft">&gt;</span>
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">220</span> <span class="soft">&lt; Print 0</span>        |      <span class="soft">Print 0</span>      |     <span class="soft">Print 13</span>      |        <span class="hard">&gt;</span>
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">240</span> <span class="hard">&lt; Repeat 20</span>  |      <span class="hard">Print 0</span>      |      <span class="hard">Print 0</span>      |   <span class="hard">Print 13 &gt;</span>
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">260</span> <span class="hard">&lt;</span>        |   <span class="soft">Repeat 13 (F)</span>   |     <span class="soft">CRC32</span>     |     <span class="soft">ISIZE</span>     |    <span class="hard">&gt;</span>
+     +---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+---+ 
+<span class="soft">300</span> <span class="hard">&lt; Repeat 13 (F)</span>  |     CRC32     |     ISIZE     |                 
+     +---+---+---+---+---+---+---+---+---+---+---+---+                 
+</pre>
+</div>
