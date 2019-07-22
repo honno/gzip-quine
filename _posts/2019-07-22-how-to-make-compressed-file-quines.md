@@ -1,6 +1,8 @@
 ---
 layout: post
 title: How to make compressed file quines, step by step
+description: Create a GZIP file that infinitely contains itself!
+image: quine_gz.png
 ---
 
 {% assign diagram_dir = "posts/compression_quines" %}

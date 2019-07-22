@@ -15,9 +15,3 @@ plugins:
   - jekyll-feed
 sass:
   sass_dir: _sass
-
-# Minima
-minima:
-  social_links:
-    twitter: WhoStoleHonno
-    github: Honno
