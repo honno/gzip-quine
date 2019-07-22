@@ -5,6 +5,9 @@ description: Create a GZIP file that infinitely contains itself!
 image: "quine_gz.png"
 ---
 
+![quine_gz]({{ site.url }}/images/posts/quine_gz.png)
+{: style="display: none" }
+
 {% assign diagram_dir = "posts/compression_quines" %}
 {% assign quine_gz_path = "/downloads/quine.gz" %}
 
