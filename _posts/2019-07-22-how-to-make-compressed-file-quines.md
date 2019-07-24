@@ -16,7 +16,7 @@ image: "quine_gz.png"
 
 You may have come across a compressed archive file (`.zip`, `.tar.gz`, `.rar` etc.) that [infinitely contains itself](https://alf.nu/ZipQuine) and thought that looks neat.
 
-You may even want to make your own---if you have suspiciously too much time on your hands and like to jump into black holes of pointless endeavours, then let me welcome you comrade. This post will explore everything you need to know to be on your merry way creating these quines.
+You might even want to make your own---that is, if you have suspiciously too much time on your hands and like to jump into black holes of pointless endeavours. Let me welcome you comrade. This post will explore everything you need to know to be on your merry way creating these quines.
 
 Much of the credit goes to folks much smarter than myself (they will be introduced); this tutorial is meant to curate previous work and literature as much as it is for myself to educate you. The goal here is to allow for any curious, technically-minded newcomer to make sense of all the concepts involved in creating compression quines.
 
@@ -189,7 +189,7 @@ We can't quite determine the trailer yet, as it's two set fields---`CRC32` and `
 
 ### DEFLATE-compressed data stream
 
-As we mentioned, compressed data is essentially only comprised of *print* and *repeat* instructions. But it is actually a *DEFLATE* data stream .
+As mentioned, compressed data can be boiled down to just of *print* and *repeat* instructions. But to get to that level of abstraction, we need to understand what it really is---a *DEFLATE* data stream .
 
 And even them I'm fudging it a bit, because *technically* it can be any compression method you like (denoted by the `CM` block in the GZIP header). For modern GZIP compressors and decompressors (tools tend to do both), I believe most programs just expect use of DEFLATE anyway, so that's what we are caring about today. DEFLATE is not ubiquitous in the wider world of "compressing stuff", but it's concepts are shared by many modern compression efforts.
 
@@ -215,9 +215,9 @@ There are three `BTYPE` blocks in DEFLATE:
 
    The *Print (X)* command. Also referred to as the "literal" block, as it really says "treat the next `X`-length bytes literally, not as instructions".
 
-* Compressed block
+* Compressed blocks
 
-  For our purposes, basically the *Repeat (X, Y)* command. The important distinction here is that **the instructions are Huffman coded**. There are two subsets of compressed blocks:
+  For our purposes, these can basically be the *Repeat (X, Y)* command. The important distinction here is that **the instructions are Huffman coded**. There are two kinds of compressed blocks:
 
   * Fixed (`BTYPE=01`)
   
