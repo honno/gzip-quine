@@ -66,7 +66,7 @@ The composition of the header/data/trailer would look something like this:
 
 If that's a bit confusing, let me explain (feel free to [skip](#{{ skip_anchor }})).
 
-* Bytes are ordered right-to-left, then loops at the right again, moving a line down. Just like reading English.
+* Bytes are ordered left-to-right, then loops at the left again, moving a line down. Just like reading English.
 * Each row truncates at 16 bytes.
 * The x-axis (represented in *hex*) indicates how many bytes away from the row's starting byte-position the byte is.
 * The y-axis (represented in *octal*) indicates the row's starting byte-position, i.e:
