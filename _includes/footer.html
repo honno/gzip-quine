@@ -3,33 +3,37 @@
 
   <div class="wrapper">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col one-half">
-        <p>The Blorg comes with a <strong>100% Sunk Cost Guarantee</strong></p>
-      </div>
+    <div class="row" >
+        <div class="my-face" >
+          <img src="{{ site.url }}/images/me.jpg"></img>
+        </div>
 
-      <div class="footer-col one-half">
-        <ul class="contact-list"
-            style="text-align: right">
-          {%- if site.email -%}
-          <li>
-            Email: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
-          </li>
-          {%- endif -%}
-          {%- if site.twitter_username -%}
-          <li>
-            Twitter: <a class="u-twitter" href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>
-          </li>
-          {%- endif -%}
-          {%- if site.github_username -%}
-          <li>
-            GitHub: <a class="u-twitter" href="https://github.com/{{ site.github_username }}">@{{ site.github_username }}</a>
-          </li>
-          {%- endif -%}
-        </ul>
-      </div>
+        <div class="footer-text-contents" >
+          <h2>About <u>The Blorg</u></h2>
+          <p><i>Matthew Barber</i> is a nerdy dude on the internet with opinions, offering a refreshing change of pace to internet spaces everywhere. Being not the renaissance man he thinks he is so much as a vexatious dilettante, he compulsively dabbles in things of questionable practicality, and shares his tales of his "adventures" on this <small>not</small> award winning blog.</p>
+          <ul class="contact-list">
+            {%- if site.email -%}
+            <li>
+              <a class="u-email" href="mailto:{{ site.email }}">Email</a>
+            </li>
+            {%- endif -%}
+            {%- if site.twitter_username -%}
+            <li>
+              <a class="u-twitter" href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>
+            </li>
+            {%- endif -%}
+            {%- if site.github_username -%}
+            <li>
+              <a class="u-twitter" href="https://github.com/{{ site.github_username }}">GitHub</a>
+            </li>
+            {%- endif -%}
+          </ul>
+        </div>
+    </div>
 
-  <p align="center" style="font-size: .8rem">&copy; Matthew Barber {{ 'now' | date: "%Y" }}</p>
+    <div class="row footer-disclaimer">
+      <p>&copy; Matthew Barber {{ 'now' | date: "%Y" }}</p>
+    </div>
 
   </div>
 
