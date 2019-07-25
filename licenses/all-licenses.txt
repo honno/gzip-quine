@@ -9,6 +9,6 @@ License: MIT
 Comment:
   Theming is modified from Jekyll's Minima (license at minima-mit.txt)
 
-Files: _posts/*, _includes/posts/**, images/posts/*, assets/favicon.png, images/me.jpg
+Files: _posts/*, _includes/posts/*, images/posts/*, assets/favicon.png, images/me.jpg
 Copyright: 2019, Matthew Barber <quitesimplymatt@gmail.com>
 License: CC BY 4.0
