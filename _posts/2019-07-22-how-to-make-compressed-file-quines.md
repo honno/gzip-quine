@@ -2,7 +2,7 @@
 layout: post
 title: How to make compressed file quines, step by step
 description: Create a GZIP file that infinitely contains itself!
-image: "quine_gz.png"
+image: quine_gz.gif
 ---
 
 ![quine_gz]({{ site.url }}/images/posts/quine_gz.png)
