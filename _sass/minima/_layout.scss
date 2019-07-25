@@ -227,11 +227,14 @@
 }
 
 .footer-disclaimer {
+    display: block !important;
+
     & > p {
+        display: block;
+        width: 100%;
         font-size: 0.8rem;
     }
 }
-
 
 @media (min-width: 512px) {
     .row {
