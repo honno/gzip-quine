@@ -8,4 +8,4 @@ Comment:
 
 Files: _posts/*, _includes/posts/**, images/posts/*, assets/favicon.png, images/me.jpg
 Copyright: 2019, Matthew Barber <quitesimplymatt@gmail.com>
-License: CC BY-4.0
+License: CC BY 4.0
