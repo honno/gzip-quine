@@ -355,13 +355,14 @@ I really can't thank the following folk enough for the amazing educational resou
 * [David Madore](http://www.madore.org/~david/)
 * [Will Greenberg](https://github.com/wgreenberg)
 * [Richard Mitton](http://www.codersnotes.com/)
-* [Prof. David Brailsford](http://www.cs.nott.ac.uk/~psadb1/) (+ all of [Computerphile](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA))
+* [Prof. David Brailsford](http://www.cs.nott.ac.uk/~psadb1/)
 * [Prof. Steven Bagley](http://www.cs.nott.ac.uk/~pszsrb/)
+* All of [Computerphile](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA)
 * [Calmarius](http://calmarius.net)
 * [Prof. Norman Matloff](https://faculty.engineering.ucdavis.edu/matloff/)
 * [Mark Adler](https://madler.net/madler/)
 
-Thanks for reading!
+Thanks for reading, and happy hacking!
 
 {% include widgets/asciianim/script.html %}
 {% include widgets/collapse/script.html %}
