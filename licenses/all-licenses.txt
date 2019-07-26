@@ -2,6 +2,7 @@
 ---
 
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: https://github.com/Honno/blog/
 
 Files: *
 Copyright: 2019, Matthew Barber <quitesimplymatt@gmail.com>
