@@ -328,7 +328,7 @@ Actually, at this point your quine will work on a lot of popular decompressors (
 
 I won't get into how a cyclic redundancy check works---you can read [these succinct notes](http://heather.cs.ucdavis.edu/matloff/public_html/Networks/CRC/Old/ErrChkCorr.html) by Prof. Norman Matloff---but for all intents and purposes you can simply bruteforce all possible values until something works.
 
-For the 32 bits of CRC32, there are 2<sup>^32</sup> (over 4 billion) permutations you can test. For modern tech that ain't too much of an effort, so I wrote a [dirty Python script utilizing multi-processing](https://github.com/Honno/self-referential-crc-bruteforce/blob/master/find-crc32.py). It works by embedding a given CRC32 value into defined quoted & actual positions in a provided template file, checking if the CRC32 checksum of the modified template matches the given CRC32 value.
+For the 32 bits of CRC32, there are 2<sup>^32</sup> (over 4 billion) permutations you can test. For modern tech that ain't too much of an effort, so I wrote a [dirty Python script utilizing multi-processing](https://gist.github.com/Honno/4e6e4790e14c43bf5d6fa822fb56b6ea). It works by embedding a given CRC32 value into defined quoted & actual positions in a provided template file, checking if the CRC32 checksum of the modified template matches the given CRC32 value.
 
 I plonked it on a Google Cloud server to run on (they offer more than enough free credit), so as not to see my not-so-modern Pentium CPU bleed to death. If you were going to use it on a basic computer, you'll likely want to modify the script to add appropriate sleep instructions if you don't want to repurpose your processor as a frying pan.
 
