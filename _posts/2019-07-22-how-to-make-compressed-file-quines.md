@@ -24,7 +24,7 @@ Particular thanks goes to Russ Cox who [wrote on the subject of compressed files
 
 A word of warning for those inexperienced in Lempel-Ziv and Huffman Codes, compressed archive specs like DEFLATE, and editing files on a binary-level---**there is a lot to learn, understand and work through**. Although a very educational process (and I think a lot of fun), there is little direct practical achievement here. For example, I took more than a month to just create the petty 204-byte [quine.gz]({{ quine_gz_path }}).
 
-**A GZIP quine will be the main subject of this article.** It will be the easiest format to create a quine with, as the formt does not concern itself with archiving a collection of files like ZIP does. Once you've learnt how to make a GZIP quine, you will feel confident to explore other formats and specifications.
+**A GZIP quine will be the main subject of this article.** It will be the easiest format to create a quine with, as the GZIP format does not concern itself with archiving a collection of files like ZIP does. Once you've learnt how to make a GZIP quine, you will feel confident to explore other formats and specifications.
 
 Also mind, GZIP is well-supported on popular Linux distributions. About Windows and Mac---I don't know, but I'm sure there'll be tools available if you search around.
 
