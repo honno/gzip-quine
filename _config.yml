@@ -4,7 +4,7 @@ email: quitesimplymatt@gmail.com
 description: >-
   Personal blog of Matthew Barber.
 baseurl: "/"
-url: "https://blog.matthewbarber.io/"
+url: "https://matthewbarber.io/gzip-quine/"
 master_url: "https://matthewbarber.io/"
 twitter_username: WhoStoleHonno
 github_username: Honno
