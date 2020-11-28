@@ -9,7 +9,7 @@ image: quine_gz.png
 {: style="display: none" }
 
 {% assign diagram_dir = "posts/compression_quines" %}
-{% assign quine_gz_path = "/quine.gz" %}
+{% assign quine_gz_path = "https://github.com/Honno/gzip-quine/raw/main/quine.gz" %}
 
 {% capture quine_asciianim %}{% include {{ diagram_dir }}/gzip_quine_anim.html %}{% endcapture %}
 {% include {{ diagram_dir }}/gzip_quine_anim_container.html src=quine_asciianim %}
